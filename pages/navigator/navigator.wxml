@@ -1,0 +1,4 @@
+<navigator url='../navigator1/navigator1?name="胡"'>
+go to navigator1
+</navigator>
+<button type='primary'>跳转过去</button>

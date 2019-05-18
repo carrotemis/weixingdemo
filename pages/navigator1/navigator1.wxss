@@ -1,0 +1,4 @@
+/* pages/navigator1/navigator1.wxss */
+.hover{
+  cursor: pointer;
+}

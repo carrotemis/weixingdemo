@@ -1,0 +1,32 @@
+<view class="container">
+  
+<!-- 头部输入框 -->
+<view class='header'>
+  <image  bindtap='addtodoHandler' src='../../images/plus.png'></image>
+  <input bindinput='inputHandle'  value='{{input}}'  placeholder='Anything here...' bindconfirm="addtodoHandler"></input>
+</view>
+
+
+<!-- todos -->
+<view class='todos'>
+<view bindtap='toggleHandle' data-index='{{ index }}'  class='item {{  item.completed ? "completed" : ""}}' wx:for="{{ todos }}" wx:key="{{ index }}">
+    <icon type='{{ item.completed ? "success" : "circle" }}'></icon>
+    <text>{{ item.name }}</text>
+    <icon type='clear' catchtap="removeTodoHandle" data-index="{{ index }}"></icon>
+</view>
+
+
+</view>
+
+<!-- footer -->
+<view class='footer'>
+ <text bindtap='toggleAllHandle'>选择所有</text>
+ <text wx:if="{{ leftCount }}">{{ leftCount }} </text>
+ <text  bindtap='clearHandle'>清除完成任务</text>
+</view>
+
+
+
+
+
+</view>

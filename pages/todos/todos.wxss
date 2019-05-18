@@ -1,0 +1,50 @@
+
+.header{
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  display: flex;
+   border-radius: 5rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+
+.header image{
+  width: 50rpx;
+  height: 50rpx;
+ margin-right: 20rpx;
+
+}
+/* 中间部分todos */
+
+.todos {
+   border: 1rpx solid #e0e0e0;
+ border-radius: 5rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+ margin: 20rpx;
+
+}
+.todos .item{
+  display: flex;
+   padding: 20rpx;
+ border-bottom: 1rpx solid #e0e0e0;
+ align-items: center;
+
+}
+.todos .item.completed text{
+   color: #888;
+  text-decoration: line-through;
+}
+.todos .item text {
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #444;
+}
+
+
+/* 第三部分  底部区域 */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+

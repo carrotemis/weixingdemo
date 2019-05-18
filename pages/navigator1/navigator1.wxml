@@ -1,0 +1,4 @@
+<!--pages/navigator1/navigator1.wxml-->
+<navigator url='../navigator/navigator'>
+<image  class='hover' src='../../images/poster.jpg'></image>
+</navigator>

@@ -1,0 +1,7 @@
+/**app.wxss**/
+view ,swiper,swiper-item {
+  margin: 0;
+  padding: 0;
+}
+
+
